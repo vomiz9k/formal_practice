@@ -5,8 +5,19 @@
 
 int main()
 {
+    regex_automata::test();
+
     std::string regex, str;
     std::cin >> regex >> str;
-    regex_automata automata(regex);
-    std::cout << automata.biggest_substring_len(str);
+    
+    try
+    {
+        regex_automata automata(regex);
+        std::cout << automata.biggest_substring_len(str) << '\n';
+    }
+    catch (std::runtime_error& err)
+    {
+        std::cout << "ERROR! " << err.what() << '\n';
+        return 1;
+    }
 }
