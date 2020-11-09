@@ -3,11 +3,8 @@
 #include "regex_automata.h"
 
 
-
-
 int main()
 {
-    here:
     std::string regex, str;
     std::cin >> regex >> str;
     regex_automata automata(regex);
