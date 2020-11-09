@@ -15,20 +15,12 @@ class regex_automata
         bool valid = true;
     };
 
-    struct edge
-    {
-        char symbol;
-        int from;
-    };
-
     static const char EPS = '1';
-    static const char START = 0;
 
     std::vector<node> states;
 
     regex_automata()
     {
-
     }
 
     regex_automata(char symbol)
