@@ -4,8 +4,7 @@
 ## Алгоритм:
 ### По регулярному выражению строим автомат. Далее, с помощью DFS, для каждого суффикса данного слова находим максимальную длину префикса, лежащего в языке. Максимум по всем суффиксам - ответ на задачу.
 ## Code Coverage:
-![code cov](https://github.com/vomiz9k/formal_practice/master/code coverage.png "code coverage")
-###
+### См. "code coverage.png". Более подробная информация в regex/report/index.html.
 ## Build:
 #### cd regex
 #### cmake ./
